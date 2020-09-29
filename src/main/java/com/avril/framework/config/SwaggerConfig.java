@@ -62,8 +62,9 @@ public class SwaggerConfig
         return new ApiInfoBuilder()
                 // 设置标题
                 .title("标题：后台管理系统_接口文档")
+                .termsOfServiceUrl("https://www.baidu.com")
                 // 描述
-                //.description("描述：用于管理集团旗下公司的人员信息,具体包括XXX,XXX模块...")
+                .description("描述：Swagger API 文档")
                 // 作者信息
                 .contact(new Contact(avrilConfig.getName(), null, null))
                 // 版本

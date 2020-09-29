@@ -1,0 +1,54 @@
+{
+  "groups": [
+    {
+      "name": "avril",
+      "type": "com.avril.framework.config.AvrilConfig",
+      "sourceType": "com.avril.framework.config.AvrilConfig"
+    },
+    {
+      "name": "gen",
+      "type": "com.avril.framework.config.GenConfig",
+      "sourceType": "com.avril.framework.config.GenConfig"
+    },
+    {
+      "name": "spring.datasource.druid.master",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.avril.framework.config.DruidConfig",
+      "sourceMethod": "masterDataSource(com.avril.framework.config.properties.DruidProperties)"
+    },
+    {
+      "name": "spring.datasource.druid.slave",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.avril.framework.config.DruidConfig",
+      "sourceMethod": "slaveDataSource(com.avril.framework.config.properties.DruidProperties)"
+    }
+  ],
+  "properties": [
+    {
+      "name": "avril.copyright-year",
+      "type": "java.lang.String",
+      "description": "版权年份",
+      "sourceType": "com.avril.framework.config.AvrilConfig"
+    },
+    {
+      "name": "avril.demo-enabled",
+      "type": "java.lang.Boolean",
+      "description": "实例演示开关",
+      "sourceType": "com.avril.framework.config.AvrilConfig",
+      "defaultValue": false
+    },
+    {
+      "name": "avril.name",
+      "type": "java.lang.String",
+      "description": "项目名称",
+      "sourceType": "com.avril.framework.config.AvrilConfig"
+    },
+    {
+      "name": "avril.version",
+      "type": "java.lang.String",
+      "description": "版本",
+      "sourceType": "com.avril.framework.config.AvrilConfig"
+    }
+  ],
+  "hints": []
+}
